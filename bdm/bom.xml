@@ -4,6 +4,11 @@
         <businessObject qualifiedName="com.company.model.NabavkaZahtev">
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.SifarnikKategorijePoslova" fetchType="LAZY" name="kategorijaPosla" nullable="true" collection="true"/>
+                <field type="TEXT" length="255" name="opis" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="maxCena" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="rokPrimanjaPonude" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="maxBrojPonuda" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="rokZavrsetka" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
