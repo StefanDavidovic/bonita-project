@@ -3,7 +3,7 @@
     <businessObjects>
         <businessObject qualifiedName="com.company.model.NabavkaZahtev">
             <fields>
-                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.SifarnikKategorijePoslova" fetchType="LAZY" name="kategorijaPosla" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
