@@ -10,6 +10,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Ponuda">
+            <fields>
+                <field type="FLOAT" length="255" name="cena" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="datumZavrsetka" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="prihvaceno" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.PotvrdaOPrihvatanjuPosla">
             <fields>
                 <field type="LOCALDATE" length="255" name="pocetakIzvrsavanja" nullable="false" collection="false"/>
