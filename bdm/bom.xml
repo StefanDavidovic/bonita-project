@@ -10,6 +10,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.IzvrsilacUsluge">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.Registracija" fetchType="LAZY" name="registracioniPodaci" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.SifarnikKategorijePoslova" fetchType="EAGER" name="kategorijaPosla" nullable="true" collection="true"/>
+                <field type="INTEGER" length="255" name="ocena" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Ponuda">
             <fields>
                 <field type="FLOAT" length="255" name="cena" nullable="false" collection="false"/>
@@ -78,6 +88,7 @@
             <fields>
                 <field type="BOOLEAN" length="255" name="izvrsenPosao" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="ocenaFirme" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.IzvrsilacUsluge" fetchType="EAGER" name="ciljaniIzvrsilacUsluge" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
