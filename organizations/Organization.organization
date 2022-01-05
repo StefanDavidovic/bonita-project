@@ -3,6 +3,22 @@
   <customUserInfoDefinitions/>
   <users/>
   <roles/>
-  <groups/>
+  <groups>
+    <group name="Organisation">
+      <displayName>Organizacija</displayName>
+    </group>
+    <group name="Guests" parentPath="/Organisation">
+      <displayName>Gosti</displayName>
+    </group>
+    <group name="Clients" parentPath="/Organisation">
+      <displayName>Klijenti</displayName>
+    </group>
+    <group name="Administrator" parentPath="/Organisation">
+      <displayName>Administrator</displayName>
+    </group>
+    <group name="Agent" parentPath="/Organisation">
+      <displayName>Agent</displayName>
+    </group>
+  </groups>
   <memberships/>
 </organization:Organization>
