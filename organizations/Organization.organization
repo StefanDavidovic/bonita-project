@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Organization">
   <customUserInfoDefinitions/>
-  <users/>
-  <roles/>
+  <users>
+    <user userName="pera">
+      <firstName>Petar</firstName>
+      <lastName>Petrovic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData>
+        <email>petar@petrovic.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ivan">
+      <firstName>Ivan</firstName>
+      <lastName>Ivanovic</lastName>
+      <title>Mrs</title>
+      <personalData/>
+      <professionalData>
+        <email>ivan@ivanovic.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="klijent">
+      <displayName>Klijent</displayName>
+    </role>
+    <role name="agent">
+      <displayName>Agent</displayName>
+    </role>
+  </roles>
   <groups>
     <group name="Organisation">
       <displayName>Organizacija</displayName>
@@ -20,5 +50,18 @@
       <displayName>Agent</displayName>
     </group>
   </groups>
-  <memberships/>
+  <memberships>
+    <membership>
+      <userName>pera</userName>
+      <roleName>klijent</roleName>
+      <groupName>Clients</groupName>
+      <groupParentPath>/Organisation</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ivan</userName>
+      <roleName>agent</roleName>
+      <groupName>Agent</groupName>
+      <groupParentPath>/Organisation</groupParentPath>
+    </membership>
+  </memberships>
 </organization:Organization>
