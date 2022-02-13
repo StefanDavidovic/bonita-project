@@ -24,6 +24,15 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="gost">
+      <firstName>Gost</firstName>
+      <lastName>Gostovic</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="klijent">
@@ -31,6 +40,9 @@
     </role>
     <role name="agent">
       <displayName>Agent</displayName>
+    </role>
+    <role name="gost">
+      <displayName>Gost</displayName>
     </role>
   </roles>
   <groups>
@@ -61,6 +73,12 @@
       <userName>ivan</userName>
       <roleName>agent</roleName>
       <groupName>Agent</groupName>
+      <groupParentPath>/Organisation</groupParentPath>
+    </membership>
+    <membership>
+      <userName>gost</userName>
+      <roleName>gost</roleName>
+      <groupName>Guests</groupName>
       <groupParentPath>/Organisation</groupParentPath>
     </membership>
   </memberships>
