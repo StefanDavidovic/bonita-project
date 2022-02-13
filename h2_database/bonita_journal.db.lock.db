@@ -1,6 +1,6 @@
 #FileLock
-#Sun Feb 13 16:57:14 CET 2022
-server=localhost\:13524
-hostName=localhost
+#Sun Feb 13 21:35:58 CET 2022
+server=192.168.1.4\:25794
+hostName=DESKTOP-A3IK810
 method=file
-id=17ef3cd70b349f0237c7c9e2fec030f7e9b821d7f4a
+id=17ef4cca305cd95b207269c640fe0f1145518455648
