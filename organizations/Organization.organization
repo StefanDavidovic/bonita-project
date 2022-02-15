@@ -33,6 +33,12 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="User1">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="klijent">
@@ -43,6 +49,9 @@
     </role>
     <role name="gost">
       <displayName>Gost</displayName>
+    </role>
+    <role name="admin">
+      <displayName>Admin</displayName>
     </role>
   </roles>
   <groups>
@@ -80,6 +89,11 @@
       <roleName>gost</roleName>
       <groupName>Guests</groupName>
       <groupParentPath>/Organisation</groupParentPath>
+    </membership>
+    <membership>
+      <userName>User1</userName>
+      <roleName>klijent</roleName>
+      <groupName>Organisation</groupName>
     </membership>
   </memberships>
 </organization:Organization>
