@@ -1,6 +1,0 @@
-#FileLock
-#Tue Feb 15 13:58:16 CET 2022
-server=127.0.1.1\:37489
-hostName=ubuntu
-method=file
-id=17efd5fe21e9273842996713fdce1899fa51e8dca98
