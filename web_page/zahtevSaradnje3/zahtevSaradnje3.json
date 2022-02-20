@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "zahtevSaradnjeForm",
-  "name" : "zahtevSaradnjeForm",
-  "lastUpdate" : 1645315096799,
+  "id" : "zahtevSaradnje3",
+  "name" : "zahtevSaradnje3",
+  "lastUpdate" : 1645316025624,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d3d18747-4f70-42a2-8d32-7b0c5f34ebcd",
+        "reference" : "9a3fff0b-6e22-4863-9fe4-424530b7e7b2",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b8b64199-9b21-47be-b9ab-af6321a87805",
+              "reference" : "582a73ee-772d-4045-8c7e-5dc35ed0cd14",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -96,21 +96,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : true
                 }
               },
-              "reference" : "045027bd-7e6a-420e-b2c6-7200f11e2cc2",
+              "reference" : "dfc47a39-0f57-48c7-bb40-119d359e8b30",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -126,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "502428cd-8000-45e5-937f-034ac7084b7d",
+        "reference" : "29223dfa-bd03-489a-a1ae-96f00e710305",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -135,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "31d6f762-267f-461c-aba2-a602f37019c4",
+          "reference" : "8ff6f56b-441c-4a98-9553-b1643c8433a4",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -174,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "310b89c9-4ffa-4248-8337-c8289b0b68d0",
+                "reference" : "a5ebc129-c084-4a49-913b-b9f320e51966",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -206,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "098b0505-e790-4f38-a2a4-3b1925a18f2d",
+                "reference" : "36d072b9-d57e-44b5-b080-3840394ea748",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -245,7 +233,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "fbf93b15-edc5-4cf3-ac74-f7fd82d62938",
+                      "reference" : "61147c1a-4b53-4c9a-932b-4b00b8548d16",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -263,7 +251,7 @@
                       "propertyValues" : {
                         "repeatedCollection" : {
                           "type" : "variable",
-                          "value" : "zahtevSaradnje.kategorijaPosla"
+                          "value" : "zahtevSaradnje_kategorijaPosla"
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -278,7 +266,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "a79ae388-4f61-429f-87b7-dacb7641539c",
+                      "reference" : "da3d4078-a341-4236-a6f7-2df868ee96d2",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -330,25 +318,14 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item.kategorijaPosla"
+                                "value" : "$item"
                               },
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
-                              },
-                              "disabled" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "displayedKey" : {
-                                "type" : "expression",
-                                "value" : ""
-                              },
-                              "returnedKey" : {
-                                "type" : "constant"
                               }
                             },
-                            "reference" : "8034adab-0e02-4c55-aef9-4fefa13812e0",
+                            "reference" : "782a4700-37ce-439b-ac9e-108f40a01bb5",
                             "hasValidationError" : false,
                             "id" : "pbSelect",
                             "description" : ""
@@ -373,8 +350,8 @@
                                 "value" : false
                               },
                               "hidden" : {
-                                "type" : "constant",
-                                "value" : false
+                                "type" : "expression",
+                                "value" : "!$item.opis"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -386,7 +363,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{$item.kategorijaPosla.opis}}"
+                                "value" : "{{$item.opis}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -395,21 +372,9 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : true
                               }
                             },
-                            "reference" : "c2260460-a4ad-4c76-b4d2-ce094f184bae",
+                            "reference" : "9809f8b9-f48e-4a5c-a9b8-dc6d9c947e9a",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -434,8 +399,8 @@
                                 "value" : false
                               },
                               "hidden" : {
-                                "type" : "constant",
-                                "value" : false
+                                "type" : "expression",
+                                "value" : "!$item.naziv"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -447,7 +412,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{$item.kategorijaPosla.naziv}}"
+                                "value" : "{{$item.naziv}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -456,21 +421,9 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : true
                               }
                             },
-                            "reference" : "0ff8ddfc-6ca3-4a1a-a2af-ba3fee7ae56c",
+                            "reference" : "3caaeb08-9ac1-42e6-a2ee-4334a3ce4d56",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -544,7 +497,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "553b7b2b-245b-4639-9846-b71b1ebf49c1",
+                            "reference" : "a7843b87-5b1d-4a51-b1c5-dd481b5913bb",
                             "hasValidationError" : false,
                             "id" : "pbButton",
                             "description" : ""
@@ -601,11 +554,11 @@
                         },
                         "collectionToModify" : {
                           "type" : "variable",
-                          "value" : "zahtevSaradnje.kategorijaPosla"
+                          "value" : "zahtevSaradnje_kategorijaPosla"
                         },
                         "valueToAdd" : {
                           "type" : "expression",
-                          "value" : "{\r\n  \"persistenceId_string\" : \"\",\r\n  \"opis\" : \"\",\r\n  \"naziv\" : \"\"\r\n}"
+                          "value" : "{\n  \"persistenceId_string\" : \"\",\n  \"opis\" : \"\",\n  \"naziv\" : \"\"\n}"
                         },
                         "disabled" : {
                           "type" : "constant",
@@ -620,7 +573,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "b345b7c6-b677-45e9-bb3a-1665ec461218",
+                      "reference" : "3650ba6f-4a7c-4b6a-956d-28c4a45114a6",
                       "hasValidationError" : false,
                       "id" : "pbButton",
                       "description" : ""
@@ -682,27 +635,9 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "4500b2f8-9e6d-4fe2-aac7-e9cfb2ddd7f3",
+                      "reference" : "9e748ee0-5f18-40cb-a053-d70b00451c0d",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -763,10 +698,10 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         }
                       },
-                      "reference" : "1f02daa2-2ca0-4e2e-a62d-5ea9dbfe1e92",
+                      "reference" : "fc7cd453-b156-46f6-8217-69932163c073",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -842,7 +777,7 @@
                           "value" : "zahtevSaradnje.rokPrimanjaPonude"
                         }
                       },
-                      "reference" : "0c06465a-51bf-4c51-a679-b98daadcb653",
+                      "reference" : "5c306aec-8ae6-46e8-b0f3-6ced9f7a86c4",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
@@ -906,7 +841,7 @@
                           "value" : true
                         }
                       },
-                      "reference" : "fc91d879-f54a-4f39-8c77-9c653001bde3",
+                      "reference" : "4bf0cf20-1f2d-451a-962f-6d9f8fcfb689",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -982,7 +917,7 @@
                           "value" : "zahtevSaradnje.rokZavrsetka"
                         }
                       },
-                      "reference" : "c9f0b44e-d663-458a-9200-4853ba240aa0",
+                      "reference" : "8b1680d0-ffe2-4c5f-8088-84362342e9e2",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
@@ -1012,7 +947,7 @@
                         },
                         "disabled" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -1025,68 +960,15 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "zahtevSaradnje.prihvaceno"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "10991f9d-5ad6-4626-92ca-96b3d062a774",
+                      "reference" : "4f35dde0-994b-4a45-8cf5-d9b3cf6d319e",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ]
                 ]
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Pronadjene Firme Input"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.pronadjeneFirmeInput"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  }
-                },
-                "reference" : "0ccb3ff4-f76e-4b46-8e8f-35dcf2cb723f",
-                "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
               }
             ],
             [
@@ -1148,8 +1030,8 @@
                     "type" : "expression"
                   },
                   "disabled" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1158,32 +1040,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "e0072a73-cfa5-4b5d-bdae-f533b3004f0e",
+                "reference" : "b3a779b3-d933-4ee8-b3ee-5df982d19461",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1233,9 +1092,17 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
-                "reference" : "80db9fc6-09ea-42d0-8fa1-11a98da93813",
+                "reference" : "91b4d0d4-11d8-424f-84d9-aaa67499fa36",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1248,14 +1115,14 @@
   ],
   "assets" : [
     {
-      "id" : "52cb6ba7-6e27-4af4-bb14-7198eb21f95a",
+      "id" : "bae1525b-0073-40f8-811b-d1b686d7d92d",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "20f8aea3-dfcd-41ee-9cce-6136a00d6522",
+      "id" : "be54371a-5642-415a-bc82-725aecb86196",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -1268,16 +1135,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"input1\" : \"\",\r",
-        "  \"pronadjeneFirmeInput\" : false\r",
-        "}"
       ],
       "exposed" : false
     },
@@ -1306,9 +1163,10 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.zahtevSaradnje ){",
+        "if( $data.zahtevSaradnje && $data.zahtevSaradnje_kategorijaPosla ){",
+        "\t//attach lazy references variables to parent variables",
+        "\t$data.zahtevSaradnje.kategorijaPosla = $data.zahtevSaradnje_kategorijaPosla;",
         "\treturn {",
-        "\t\tinput1: $data.formInput.input1,",
         "\t\t//map zahtevSaradnje variable to expected task contract input",
         "\t\tzahtevSaradnjeInput: {",
         "\t\t\tkategorijaPosla: $data.zahtevSaradnje.kategorijaPosla.map( it => ({",
@@ -1319,8 +1177,7 @@
         "\t\t\trokPrimanjaPonude: $data.zahtevSaradnje.rokPrimanjaPonude !== undefined ? $data.zahtevSaradnje.rokPrimanjaPonude : null,",
         "\t\t\tmaxBrojPonuda: $data.zahtevSaradnje.maxBrojPonuda !== undefined ? $data.zahtevSaradnje.maxBrojPonuda : null,",
         "\t\t\trokZavrsetka: $data.zahtevSaradnje.rokZavrsetka !== undefined ? $data.zahtevSaradnje.rokZavrsetka : null",
-        "\t\t},",
-        "\t\tpronadjeneFirmeInput: $data.formInput.pronadjeneFirmeInput",
+        "\t\t}",
         "\t}",
         "}"
       ],
@@ -1346,10 +1203,17 @@
         "id"
       ],
       "exposed" : false
+    },
+    "zahtevSaradnje_kategorijaPosla" : {
+      "type" : "url",
+      "value" : [
+        "{{zahtevSaradnje|lazyRef:'kategorijaPosla'}}"
+      ],
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "db1cf81b-402c-4c95-a2ae-176b4aedbbd5",
+  "uuid" : "39a1233f-ea30-42ff-9b02-f77364ac869f",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
