@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "PonudaForm",
   "name" : "PonudaForm",
-  "lastUpdate" : 1645309388271,
+  "lastUpdate" : 1645399051916,
   "rows" : [
     [
       {
@@ -940,7 +940,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -961,6 +961,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "ponuda.prihvaceno"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "673b62c5-228f-4316-8a80-e88fe6aaeddb",
@@ -988,7 +992,7 @@
                   },
                   "hidden" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -1009,6 +1013,10 @@
                   "value" : {
                     "type" : "variable",
                     "value" : "formInput.dovoljanBrojPonudaInput"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "eef50075-925d-4de7-9162-d61215d0343a",

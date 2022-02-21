@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ponuda2",
   "name" : "ponuda2",
-  "lastUpdate" : 1645394135786,
+  "lastUpdate" : 1645404078495,
   "rows" : [
     [
       {
@@ -415,7 +415,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -436,6 +436,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "ponuda.prihvaceno"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "8cbbf894-6d72-4fc7-b1a4-c58f05ac5e64",

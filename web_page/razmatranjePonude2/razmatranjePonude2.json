@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "razmatranjePonude2",
   "name" : "razmatranjePonude2",
-  "lastUpdate" : 1645394283766,
+  "lastUpdate" : 1645404062199,
   "rows" : [
     [
       {
@@ -230,7 +230,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -254,6 +254,24 @@
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "ca1e13e4-6a5f-46a9-832e-47534ffdec75",
@@ -290,7 +308,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -877,6 +895,18 @@
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
                               }
                             },
                             "reference" : "9854a368-5fca-4a53-b3ce-fab81f74947f",
